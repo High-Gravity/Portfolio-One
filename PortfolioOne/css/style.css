@@ -2,7 +2,7 @@
     margin:0;
     padding: 0;
 }
-
+/* General Settings */
 body{
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -24,6 +24,9 @@ h2 {
 p{
     font-weight: 300;
 }
+
+/* Header Settings*/
+
 header{
     background-color: rgb(0, 0, 0);
     padding-top: 1rem;
@@ -34,6 +37,8 @@ header > img {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Navigation Settings*/
 nav > ul {
     background-color: rgb(0, 0, 0);
     list-style: none;
@@ -63,18 +68,25 @@ li > a:hover{
 #home{
     border-bottom-left-radius: 10px;
 }
-#banner {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    background-image: url('../img/ringsforbanner.png');
-    text-shadow: 0 0 1rem white;
-}
+
+/* Section Settings */
+
 
 section {
     display: flex;
 }
+#banner {
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    background-image: url('../img/ringsforbanner.png');
+    text-shadow: 0 0 1rem white;
+}
+
 article{
     flex: 1;
     background-color: rgb(218, 165, 32);
@@ -85,9 +97,9 @@ article{
 article:hover{
     box-shadow: 0rem 0rem 1rem 1rem rgb(0, 0, 0);
 }
-img{
-    align-content: center;
-}
+
+/* Animation Settings */
+
 @keyframes sparkle {
     0% {
       opacity: 0.1;
@@ -102,6 +114,9 @@ img{
   .sparkle:hover {
     animation: sparkle 3s ease-in-out infinite ;
   }
+
+/* Button Settings */
+
 button{
     font-family: 'Times New Roman', Times, serif;
     padding-left: 2rem;
@@ -116,6 +131,8 @@ button{
 button:hover{
     background-color: rgb(224, 224, 224);
 }
+
+/* Footer Settings */
 footer{
     display: flex;
     padding: 10px;
@@ -125,5 +142,9 @@ footer{
 }
 footer > div{
     flex: 1;
+}
+
+footer > #right-align{
+    text-align: right;
 }
 
