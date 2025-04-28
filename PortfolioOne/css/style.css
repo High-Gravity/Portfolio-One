@@ -2,17 +2,32 @@
     margin:0;
     padding: 0;
 }
+
 body{
     margin-top: 3rem;
     margin-bottom: 3rem;
     margin-left: 5%;
     margin-right: 5%;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    background-color: beige;
 }
 h1 {
     font-size: 3rem;
+    text-align: center;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+p{
+    font-weight: 300;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 header > img {
     display: block;
@@ -20,12 +35,41 @@ header > img {
     margin-right: auto;
 }
 nav > ul {
+    background-color: rgb(0, 0, 0);
     list-style: none;
     text-align: center;
 }
-
-nav li {
+nav li{
     display: inline-block;
+
+}
+li > a{
+    text-decoration: none;
+    font-family: baskerville;
+    color: rgb(218, 165, 32);
+    padding: 10px 20px;
+    border-top: solid rgb(255, 255, 255);
+    margin: 0px;
+    background-color: rgb(0, 0, 0);
+
+}
+li > a:hover{
+    background-color: rgb(192, 192, 192);
+    color: rgb(0, 0, 0);
+}
+#about{
+    border-bottom-right-radius: 10px;
+}
+#home{
+    border-bottom-left-radius: 10px;
+}
+#banner {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-image: url('../img/ringsforbanner.png');
+    text-shadow: 0 0 1rem white;
 }
 
 section {
@@ -33,10 +77,53 @@ section {
 }
 article{
     flex: 1;
+    background-color: rgb(218, 165, 32);
+    padding: 1rem;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+article:hover{
+    box-shadow: 0rem 0rem 1rem 1rem rgb(0, 0, 0);
+}
+img{
+    align-content: center;
+}
+@keyframes sparkle {
+    0% {
+      opacity: 0.1;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+      opacity: 0.1;
+    }
+  }
+  .sparkle:hover {
+    animation: sparkle 3s ease-in-out infinite ;
+  }
+button{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    float: right;
+    background-color: silver;
+}
+button:hover{
+    background-color: rgb(224, 224, 224);
 }
 footer{
     display: flex;
+    padding: 10px;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    margin-top: 30px;
 }
 footer > div{
     flex: 1;
 }
+
